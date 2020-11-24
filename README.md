@@ -13,3 +13,21 @@ The firmware dataword for each pattern and comparator code is 18 bits long:
 ## GEM-CSC LUTs
 
 This repository also holds lookup-tables that map GEM readout channels (pad) onto 1/8-strip CSC channels, and that map GEM roll numbers onto CSC wiregroups. LUTs are provided for ME1/1 and ME2/1, for even and odd. In the case of ME1/1, separate LUTs are present for ME1/a and ME1/b strips. A single LUT is foreseen for the wiregroups. The .mem files are those which will be loaded into VERILOG firmware.
+
+* map GEM pad onto CSC 1/8-strip number
+   - GEMCSCLUT_pad_es_ME1a_even.txt (start at CSC strip 64, or 1/8-strip 512)
+   - GEMCSCLUT_pad_es_ME1a_odd.txt  (start at CSC strip 64, or 1/8-strip 512)
+   - GEMCSCLUT_pad_es_ME1b_even.txt
+   - GEMCSCLUT_pad_es_ME1b_odd.txt
+   - GEMCSCLUT_pad_es_ME21_even.txt
+   - GEMCSCLUT_pad_es_ME21_odd.txt
+
+* map GEM roll onto CSC minimum and maximum wiregroup number
+   - GEMCSCLUT_roll_max_wg_ME11_even.txt
+   - GEMCSCLUT_roll_max_wg_ME11_odd.txt
+   - GEMCSCLUT_roll_max_wg_ME21_even.txt
+   - GEMCSCLUT_roll_max_wg_ME21_odd.txt
+   - GEMCSCLUT_roll_min_wg_ME11_even.txt
+   - GEMCSCLUT_roll_min_wg_ME11_odd.txt
+   - GEMCSCLUT_roll_min_wg_ME21_even.txt
+   - GEMCSCLUT_roll_min_wg_ME21_odd.txt
