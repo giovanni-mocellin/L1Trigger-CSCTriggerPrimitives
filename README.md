@@ -34,10 +34,16 @@ This repository also holds lookup-tables that map GEM readout channels (pad) ont
 
 ## CSC ME1/1 LUTs
 
-* map wiregroup onto min and max half-strip number that it crosses
+LUT for which ME1/1 wire group can cross which halfstrip. 1st index: WG number. 2nd index: inclusive HS range
+
+* map wiregroup onto min and max half-strip number that it crosses in ME1/a. Keep in mind that ME1A is considered an extension of ME1B. This means that ME1A half-strips start at 128 and end at 223
    - CSCLUT_wg_min_hs_ME1a.txt
    - CSCLUT_wg_max_hs_ME1a.txt
+
+* map wiregroup onto min and max half-strip number that it crosses in ME1/a. When the half-strips are triple-ganged, (Run-1) ME1A half-strips go from 128 to 159
    - CSCLUT_wg_min_hs_ME1a_ganged.txt
    - CSCLUT_wg_max_hs_ME1a_ganged.txt
+
+* map wiregroup onto min and max half-strip number that it crosses in ME1/b. ME1B half-strips start at 0 and end at 127
    - CSCLUT_wg_min_hs_ME1b.txt
    - CSCLUT_wg_max_hs_ME1b.txt
