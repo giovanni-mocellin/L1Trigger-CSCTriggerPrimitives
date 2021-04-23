@@ -31,3 +31,13 @@ This repository also holds lookup-tables that map GEM readout channels (pad) ont
    - GEMCSCLUT_roll_min_wg_ME11_odd.txt
    - GEMCSCLUT_roll_min_wg_ME21_even.txt
    - GEMCSCLUT_roll_min_wg_ME21_odd.txt
+
+## CSC ME1/1 LUTs
+
+* map wiregroup onto min and max half-strip number that it crosses
+   - CSCLUT_wg_min_hs_ME1a.txt
+   - CSCLUT_wg_max_hs_ME1a.txt
+   - CSCLUT_wg_min_hs_ME1a_ganged.txt
+   - CSCLUT_wg_max_hs_ME1a_ganged.txt
+   - CSCLUT_wg_min_hs_ME1b.txt
+   - CSCLUT_wg_max_hs_ME1b.txt
