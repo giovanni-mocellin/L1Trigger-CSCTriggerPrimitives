@@ -1,8 +1,10 @@
 # L1Trigger-CSCTriggerPrimitives
 
+General note: `.txt` files are ASCII format. The `.mem` files are transated `.txt` into hexadecimal and can be loaded into VERILOG firmware.
+
 ## CCLUT (under directory CCLUT)
 
-This repository holds lookup-tables which map a pattern number and a 12-bit comparator code onto an unsigned 4-bit position offset and a 5-bit slope. In the current form, there are 5 patterns (0 through 4) and 4096 comparator codes. LUTs are also available with floating point values (for reference). A third set of LUTs convert the Run-1/2 patterns to Run-3 patterns. The .mem files are those which will be loaded into VERILOG firmware.
+This repository holds lookup-tables which map a pattern number and a 12-bit comparator code onto an unsigned 4-bit position offset and a 5-bit slope. In the current form, there are 5 patterns (0 through 4) and 4096 comparator codes. LUTs are also available with floating point values (for reference). A third set of LUTs convert the Run-1/2 patterns to Run-3 patterns.
 
 The firmware dataword for each pattern and comparator code is 18 bits long:
    - [8:0] is quality (set all to 0 for now)
@@ -21,16 +23,30 @@ This repository also holds lookup-tables that map GEM readout channels (pad) ont
    - GEMCSCLUT_pad_es_ME1b_odd.txt
    - GEMCSCLUT_pad_es_ME21_even.txt
    - GEMCSCLUT_pad_es_ME21_odd.txt
+   - GEMCSCLUT_pad_hs_ME1a_even.txt
+   - GEMCSCLUT_pad_hs_ME1a_odd.txt
+   - GEMCSCLUT_pad_hs_ME1b_even.txt
+   - GEMCSCLUT_pad_hs_ME1b_odd.txt
+   - GEMCSCLUT_pad_hs_ME21_even.txt
+   - GEMCSCLUT_pad_hs_ME21_odd.txt
 
 * map GEM roll onto CSC minimum and maximum wiregroup number
-   - GEMCSCLUT_roll_max_wg_ME11_even.txt
-   - GEMCSCLUT_roll_max_wg_ME11_odd.txt
-   - GEMCSCLUT_roll_max_wg_ME21_even.txt
-   - GEMCSCLUT_roll_max_wg_ME21_odd.txt
-   - GEMCSCLUT_roll_min_wg_ME11_even.txt
-   - GEMCSCLUT_roll_min_wg_ME11_odd.txt
-   - GEMCSCLUT_roll_min_wg_ME21_even.txt
-   - GEMCSCLUT_roll_min_wg_ME21_odd.txt
+   - GEMCSCLUT_roll_l1_max_wg_ME11_even.txt
+   - GEMCSCLUT_roll_l1_max_wg_ME11_odd.txt
+   - GEMCSCLUT_roll_l1_max_wg_ME21_even.txt
+   - GEMCSCLUT_roll_l1_max_wg_ME21_odd.txt
+   - GEMCSCLUT_roll_l1_min_wg_ME11_even.txt
+   - GEMCSCLUT_roll_l1_min_wg_ME11_odd.txt
+   - GEMCSCLUT_roll_l1_min_wg_ME21_even.txt
+   - GEMCSCLUT_roll_l1_min_wg_ME21_odd.txt
+   - GEMCSCLUT_roll_l2_max_wg_ME11_even.txt
+   - GEMCSCLUT_roll_l2_max_wg_ME11_odd.txt
+   - GEMCSCLUT_roll_l2_max_wg_ME21_even.txt
+   - GEMCSCLUT_roll_l2_max_wg_ME21_odd.txt
+   - GEMCSCLUT_roll_l2_min_wg_ME11_even.txt
+   - GEMCSCLUT_roll_l2_min_wg_ME11_odd.txt
+   - GEMCSCLUT_roll_l2_min_wg_ME21_even.txt
+   - GEMCSCLUT_roll_l2_min_wg_ME21_odd.txt
 
 ## CSC ME1/1 LUTs (under directory ME11)
 
