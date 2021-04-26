@@ -1,6 +1,6 @@
 # L1Trigger-CSCTriggerPrimitives
 
-## CCLUT
+## CCLUT (under directory CCLUT)
 
 This repository holds lookup-tables which map a pattern number and a 12-bit comparator code onto an unsigned 4-bit position offset and a 5-bit slope. In the current form, there are 5 patterns (0 through 4) and 4096 comparator codes. LUTs are also available with floating point values (for reference). A third set of LUTs convert the Run-1/2 patterns to Run-3 patterns. The .mem files are those which will be loaded into VERILOG firmware.
 
@@ -10,7 +10,7 @@ The firmware dataword for each pattern and comparator code is 18 bits long:
    - [13] is slope sign
    - [17:14] is position offset
 
-## GEM-CSC LUTs
+## GEM-CSC LUTs (under directory GEMCSC)
 
 This repository also holds lookup-tables that map GEM readout channels (pad) onto 1/8-strip CSC channels, and that map GEM roll numbers onto CSC wiregroups. LUTs are provided for ME1/1 and ME2/1, for even and odd. In the case of ME1/1, separate LUTs are present for ME1/a and ME1/b strips. A single LUT is foreseen for the wiregroups. The .mem files are those which will be loaded into VERILOG firmware.
 
@@ -32,7 +32,7 @@ This repository also holds lookup-tables that map GEM readout channels (pad) ont
    - GEMCSCLUT_roll_min_wg_ME21_even.txt
    - GEMCSCLUT_roll_min_wg_ME21_odd.txt
 
-## CSC ME1/1 LUTs
+## CSC ME1/1 LUTs (under directory ME11)
 
 LUT for which ME1/1 wire group can cross which halfstrip. 1st index: WG number. 2nd index: inclusive HS range
 
