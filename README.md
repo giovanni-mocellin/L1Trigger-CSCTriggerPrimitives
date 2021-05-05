@@ -63,3 +63,9 @@ LUT for which ME1/1 wire group can cross which halfstrip. 1st index: WG number. 
 * map wiregroup onto min and max half-strip number that it crosses in ME1/b. ME1B half-strips start at 0 and end at 127
    - CSCLUT_wg_min_hs_ME1b.txt
    - CSCLUT_wg_max_hs_ME1b.txt
+
+## LCT combination codes (under directory LCTCode)
+
+* LUT that defines correspondence between ALCT-CLCT combination code and the resulting best and second lct
+   - CSCLUT_code_to_bestLCT.txt
+   - CSCLUT_code_to_secondLCT.txt
