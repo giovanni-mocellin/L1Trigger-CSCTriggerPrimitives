@@ -50,7 +50,7 @@ This repository also holds lookup-tables that map GEM readout channels (pad) ont
 
 ## CSC ME1/1 LUTs (under directory ME11)
 
-LUT for which ME1/1 wire group can cross which halfstrip. 1st index: WG number. 2nd index: inclusive HS range
+LUT for which ME1/1 wire group can cross which halfstrip. 1st index: WG number. 2nd index: inclusive HS range. -1 means no overlap
 
 * map wiregroup onto min and max half-strip number that it crosses in ME1/a. Keep in mind that ME1A is considered an extension of ME1B. This means that ME1A half-strips start at 128 and end at 223
    - CSCLUT_wg_min_hs_ME1a.txt
