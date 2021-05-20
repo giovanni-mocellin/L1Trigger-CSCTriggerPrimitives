@@ -70,7 +70,7 @@ LUT for which ME1/1 wire group can cross which halfstrip. 1st index: WG number. 
    - CSCLUT_code_to_bestLCT.txt
    - CSCLUT_code_to_secondLCT.txt
 
-# # GEM-CSC Slope correction
+## GEM-CSC Slope correction
 
 Repository for current lookup tables in decimal and hexadecimal format for the GEM-CSC slope correction.
 
