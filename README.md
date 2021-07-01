@@ -69,3 +69,13 @@ LUT for which ME1/1 wire group can cross which halfstrip. 1st index: WG number. 
 * LUT that defines correspondence between ALCT-CLCT combination code and the resulting best and second lct
    - CSCLUT_code_to_bestLCT.txt
    - CSCLUT_code_to_secondLCT.txt
+
+## GEM-CSC Slope correction
+
+Repository for current lookup tables in decimal and hexadecimal format for the GEM-CSC slope correction.
+
+.txt files contain absolute slope value corrections in 1/8th strip units from 0 at the starting line to 15 at the finish line in decimal values. .mem files contain the hexadecimal version of the same corrections.
+
+Files are organized into two directories: FacingChambers and OffSideChambers. Facing chambers are parallel in phi, OffSideChambers are alternating in phi. Furthermore, files are differentiating between even and odd chamber numbers for the CSC chambers and between matches to the GEM layers closer to beamspot in |z| as layer1 and closer to the CSC as layer2 within the same chambers.
+
+For the full correction, the sign of the slope and the z sign of the endcap need to be taken into account to determine the correction of the shift.

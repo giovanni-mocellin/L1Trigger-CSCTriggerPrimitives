@@ -1,0 +1,19 @@
+#GEM to CSC matching slope correction without consistency criteria
+#Structure is input slope (4 bit unsigned) -> 1/8th strip unit position correction (8 bit unsigned), hexadecimal version
+#<header> v1.0 4 8 </header>
+0
+b
+16
+20
+28
+30
+36
+3a
+3e
+40
+42
+43
+43
+44
+44
+44
