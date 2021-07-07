@@ -1,6 +1,3 @@
-#CLCT slope mitigation for category 3 inconsistent slopes
-#Structure is input slope (4 bit unsigned) -> output slope (4 bit unsigned), hexadecimal version
-#<header> v1.0 4 32 </header>
 0
 0
 1
